@@ -43,15 +43,19 @@ public class HelpfulNPEs {
         Integer index = null;
 
         // Of course, you'll have to enable these one by one.
-//        gimmeThatInt(intList1.get(0));
+        gimmeThatInt(intList1.get(0));
 //        gimmeThatInt(intList1.get(index));
 //        gimmeThatInt(intList2.get(0));
     }
 
     private static void gimmeThatInt(int a) {
-
+        // do interesting things
     }
 
+
+    /**
+     * A very common use case: an NPE right in the middle of a nice, long, method chain.
+     */
     private static void demo2() {
         A a = new A();
         B b = new B();
@@ -60,11 +64,7 @@ public class HelpfulNPEs {
         a.b = b;
         c.d = "Hi!";
 
-        try {
-            System.out.println(a.b.c.d);
-        } catch (NullPointerException npe) {
-            npe.printStackTrace();
-        }
+        System.out.println(a.b.c.d);
     }
 
     static class A {
