@@ -40,10 +40,9 @@ public class SwitchExpressions {
                     case 2:
                         yield "Again, you use yield to return a value.";
                     default:
-                        yield "There's no need to break.";
+                        yield "There's no need to break either.";
                 }
         );
-
     }
 
 

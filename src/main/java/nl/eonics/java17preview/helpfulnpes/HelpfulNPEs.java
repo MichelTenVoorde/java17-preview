@@ -10,7 +10,7 @@ import java.util.List;
  */
 public class HelpfulNPEs {
     public static void main(String[] args) {
-        demo1();
+//        demo1();
         demo2();
     }
 
