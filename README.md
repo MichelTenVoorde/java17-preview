@@ -1,6 +1,6 @@
 ## Welcome
 Every covered topic has got its own package. Rather than predictable and boring exercices, these contain some examples
-in which the topic at hand is being demonstrated. Use these to play around yourself. Trying to break something
+in which the topic at hand is being demonstrated. Use these as a starting point to playing around yourself. Trying to break something
 is often the best way to get to know something new.
 
 ## Links to covered topics
