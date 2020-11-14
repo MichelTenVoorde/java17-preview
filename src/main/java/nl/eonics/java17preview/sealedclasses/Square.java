@@ -3,7 +3,7 @@ package nl.eonics.java17preview.sealedclasses;
 /**
  * Square extends the sealing by permitting a subclass to extend it.
  */
-public sealed class Square extends Shape permits Demo.SpecialSquare {
+public sealed class Square extends Shape permits SealedClasses.SpecialSquare {
 
     public Square(int sideLength) {
         super(sideLength);

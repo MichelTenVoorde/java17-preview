@@ -39,8 +39,8 @@ class Point {
     // However, we can shorten things even more. Due to the short circuiting of the && operator,
     // there's no possibility of p not being in scope on the right hand side of it, so the following compiles!
 
-//    @Override
-//    public boolean equals(Object obj) {
-//        return (obj instanceof Point p && x == p.x && y == p.y);
-//    }
+    @Override
+    public boolean equals(Object obj) {
+        return (obj instanceof Point p && x == p.x && y == p.y);
+    }
 }

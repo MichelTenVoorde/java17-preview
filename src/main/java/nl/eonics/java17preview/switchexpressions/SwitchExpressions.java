@@ -13,9 +13,12 @@ public class SwitchExpressions {
     private static void testSwitchStatement() {
         switch (LocalDate.now().getDayOfWeek()) {
             case MONDAY             -> System.out.println("Sigh...");
-            case TUESDAY, WEDNESDAY -> System.out.println("We'll get there eventually.");
-            case THURSDAY           -> System.out.println("Almost there now.");
+            case TUESDAY, WEDNESDAY -> System.out.println("Hang in there...");
+            case THURSDAY           -> System.out.println("Almost there now..!");
             case FRIDAY             -> System.out.println("Party time!");
+            // You can't suddenly change syntax style
+//            case SATURDAY:
+//                System.out.println("Enjoying the weekend!");
         }
     }
 
@@ -30,19 +33,16 @@ public class SwitchExpressions {
             default -> "Switch expressions must be exhaustive (i.e., cover all possible values).";
         }; // it's easy to forget the semicolon, though of course your IDE will be happy to remind you.
 
-        System.out.println(
-                switch(interestingInt) {
-                    case 0:
-                        yield "Another option is to use the traditional switch syntax.";
-                    case 1:
-                        int a = 0;
-                        yield "There's no need for curly braces, even with multiple statements.";
-                    case 2:
-                        yield "Again, you use yield to return a value.";
-                    default:
-                        yield "There's no need to break either.";
-                }
-        );
+        System.out.println(switch(interestingInt) {
+            case 0:
+                yield "Another option is to use the traditional switch syntax.";
+            case 1:
+                yield "There's no need for curly braces, even with multiple statements.";
+            case 2:
+                yield "Again, you use yield to return a value.";
+            default:
+                yield "There's no need to break either (in fact, you can't).";
+        });
     }
 
 

@@ -1,11 +1,11 @@
 package nl.eonics.java17preview.sealedclasses;
 
-public class Demo {
+public class SealedClasses {
     public static void main(String[] args) {
         Triangle triangle = new Triangle(5);
         triangle.setName("Lovely Triangle"); // sealed is not an access modifier, Shape::setName is public, so accessible from here.
 
-        // Sealed classes can't by anonymously instantiated.
+        // Sealed classes can't be anonymously instantiated.
 //        Shape hexagon = new Shape() {
 //            @Override
 //            public double area() {

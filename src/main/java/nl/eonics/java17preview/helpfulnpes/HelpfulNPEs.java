@@ -54,7 +54,7 @@ public class HelpfulNPEs {
 
 
     /**
-     * A very common use case: an NPE right in the middle of a nice, long, method chain.
+     * A very common use case: an NPE right in the middle of a nice, long method chain.
      */
     private static void demo2() {
         A a = new A();
@@ -67,14 +67,14 @@ public class HelpfulNPEs {
         System.out.println(a.b.c.d);
     }
 
-    static class A {
-        B b;
-    }
-    static class B {
-        C c;
-    }
-    static class C {
-        String d;
-    }
+}
 
+class A {
+    B b;
+}
+class B {
+    C c;
+}
+class C {
+    String d;
 }

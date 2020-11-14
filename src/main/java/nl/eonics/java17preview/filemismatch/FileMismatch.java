@@ -19,7 +19,7 @@ public class FileMismatch {
         testFilesMismatch();
     }
 
-    public static void testArraysMismatch() {
+    private static void testArraysMismatch() {
 
         int[] intArray1 = {1, 2, 4, 7, 12};
         int[] intArray2 = {1, 2, 5, 8, 14};
@@ -35,7 +35,7 @@ public class FileMismatch {
         }
     }
 
-    public static void testFilesMismatch() throws Exception {
+    private static void testFilesMismatch() throws Exception {
 
         Path path1 = Paths.get(ClassLoader.getSystemResource("filemismatch/manifesto1").toURI());
         Path path2 = Paths.get(ClassLoader.getSystemResource("filemismatch/manifesto2").toURI());

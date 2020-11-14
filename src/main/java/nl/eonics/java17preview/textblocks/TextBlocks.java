@@ -1,5 +1,9 @@
 package nl.eonics.java17preview.textblocks;
 
+/**
+ * There's a LOT more to text blocks than this modest snippet can show.
+ * Especially in this case, I advice you to read the JEP if you're interested.
+ */
 public class TextBlocks {
 
     public static void main(String[] args) {
