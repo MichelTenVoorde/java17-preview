@@ -8,6 +8,7 @@ public class SwitchExpressions {
     public static void main(String[] args) {
         testSwitchStatement();
         testSwitchExpression();
+        testSwitchExpressionWithEnum();
     }
 
     private static void testSwitchStatement() {
@@ -42,6 +43,20 @@ public class SwitchExpressions {
                 yield "Again, you use yield to return a value.";
             default:
                 yield "There's no need to break either (in fact, you can't).";
+        });
+    }
+
+    private static void testSwitchExpressionWithEnum() {
+        enum Mood {
+            HAPPY, ANGRY, NOSTALGIC
+        }
+
+        Mood randomMood = Mood.values()[new Random().nextInt(Mood.values().length)];
+        System.out.println(switch(randomMood) {
+            case HAPPY -> "Really digging those new Java features. :D";
+            case ANGRY -> "I'm switching to Kotlin. So long suckers!";
+            case NOSTALGIC -> "Java 4 is still the best. No generics for me!";
+            // No default case needed, as all possible values are covered!
         });
     }
 
