@@ -34,4 +34,4 @@ record Square(int side)  {
 
 // Every record is a subclass of java.lang.Record. If you're feeling nerdy, have a look at it.
 
-// How do you think all this compares to Project Lombok?
+// Question: How do you think all this compares to Project Lombok?
