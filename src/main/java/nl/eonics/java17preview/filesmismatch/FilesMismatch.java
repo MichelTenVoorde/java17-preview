@@ -37,8 +37,8 @@ public class FilesMismatch {
 
     private static void testFilesMismatch() throws Exception {
 
-        Path path1 = Paths.get(ClassLoader.getSystemResource("filemismatch/manifesto1").toURI());
-        Path path2 = Paths.get(ClassLoader.getSystemResource("filemismatch/manifesto2").toURI());
+        Path path1 = Paths.get(ClassLoader.getSystemResource("filesmismatch/manifesto1").toURI());
+        Path path2 = Paths.get(ClassLoader.getSystemResource("filesmismatch/manifesto2").toURI());
 
         long differAt = Files.mismatch(path1, path2);
 
