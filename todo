@@ -1,8 +1,0 @@
-Ideas for further playing around:
-- create a dir/ls command that uses String.indent and the new Compact Number Formatting capabilities to display file sizes in a human friendly format.
-
-
-Iets vertellen over preview features
-
-
-Links naar JEPs toevoegen in README
